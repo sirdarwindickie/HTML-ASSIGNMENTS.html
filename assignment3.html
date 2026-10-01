@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>PATIENT REGISTRATION FORM</title>
+
+    <style>
+
+        body {
+            background-color: rgb(21, 9, 138);
+            font-size: 15px;
+            text-align: center;
+            margin: 30px;
+        }
+
+        h1 {
+            color: rgb(172, 11, 11);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1><u>PATIENT REGISTRATION FORM</u></h1>
+
+    <form>
+        <style>
+            table {
+                border-collapse: collapse; table-layout: fixed; width: 75%;
+            }
+            td {
+                border: 1px solid #0e0505;
+            }
+        </style>
+
+        <table border="2" cellpadding="9">
+
+            <tr>
+                <td><label>Patient Name:</label></td>
+                <td><input type="text" name="patient name"></td>
+            </tr>
+
+            <tr>
+                <td><label>Age:</label></td>
+                <td><input type="number" name="age"></td>
+            </tr>
+
+            <tr>
+                <td><label>Date of Birth:</label></td>
+                <td><input type="date" name="date_of_birth"></td>
+            </tr>
+
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>ID Number:</label></td>
+                <td><input type="text" name="id_number"></td>
+            </tr>
+
+            <tr>
+                <td><label>Patient ID:</label></td>
+                <td><input type="text" name="patient_id"></td>
+            </tr>
+
+            <tr>
+                <td><label>Phone Number:</label></td>
+                <td><input type="tel" name="phone_number"></td>
+            </tr>
+
+            <tr>
+                <td><label>Health Status Disability:</label></td>
+                <td>
+                    <input type="radio" name="health_status_disability" value="Yes"> Yes
+                    <input type="radio" name="health_status_disability" value="No"> No
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Address:</label></td>
+                <td><input type="text" name="address"></td>
+            </tr>
+
+            <tr>
+                <td><label for="marital status">Marital Status:</label></td>
+                <td>
+                    <select id="marital_status" name="marital_status">
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+                <td><label>Next of Kin:</label></td>
+                <td><input type="text" name="next_of_kin"></td>
+            </tr>
+
+            <tr>
+                <td><label>Weight:</label></td>
+                <td><input type="number" name="weight"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Register Patient">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
