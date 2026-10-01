@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+html>
+<body style="background-color: rgb(8, 100, 74);">
+<h2 style="background-color: rgba(9, 1, 1, 0.173);">Company Employment Application Form</h2>
+<p>Please fill out this form to apply for a position at our company. <b>Note:</b> Fields marked with <strong>*</strong> are required.</p>
+<hr />
+
+<form action="" method="post">
+  <table border="1" cellpadding="8" cellspacing="0">
+    
+    <!-- Section: Personal Information -->
+    <tr>
+      <th colspan="2" align="left">1. Personal Information</th>
+    </tr>
+    <tr>
+      <td>First Name <strong>*</strong>:</td>
+      <td><input type="text" name="first_name" required /></td>
+    </tr>
+    <tr>
+      <td>Last Name <strong>*</strong>:</td>
+      <td><input type="text" name="last_name" required /></td>
+    </tr>
+    <tr>
+      <td>Email Address <strong>*</strong>:</td>
+      <td><input type="email" name="email" required /></td>
+    </tr>
+    <tr>
+      <td>Phone Number:</td>
+      <td><input type="tel" name="phone" /></td>
+    </tr>
+
+    <!-- Section: Job Details -->
+    <tr>
+      <th colspan="2" align="left">2. Job Details</th>
+    </tr>
+    <tr>
+      <td>Position Applying For <strong>*</strong>:</td>
+      <td>
+        <select name="position" required>
+          <option value="">-- Select a Position --</option>
+          <option value="developer">Software Developer</option>
+          <option value="designer">UI/UX Designer</option>
+          <option value="manager">Project Manager</option>
+          <option value="analyst">Data Analyst</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Employment Status Desired:</td>
+      <td>
+        <input type="radio" id="fulltime" name="employment_type" value="Full-Time" />
+        <label for="fulltime">Full-Time</label>
+        <input type="radio" id="parttime" name="employment_type" value="Part-Time" />
+        <label for="parttime">Part-Time</label>
+      </td>
+    </tr>
+    <tr>
+      <td>Earliest Start Date:</td>
+      <td><input type="date" name="start_date" /></td>
+    </tr>
+
+    <!-- Section: Qualifications & Documents -->
+    <tr>
+      <th colspan="2" align="left">3. Qualifications & Additional Info</th>
+    </tr>
+    <tr>
+      <td>Years of Experience:</td>
+      <td><input type="number" name="experience_years" min="0" max="50" /></td>
+    </tr>
+    <tr>
+      <td>Upload Resume/CV:</td>
+      <td><input type="file" name="resume" /></td>
+    </tr>
+    <tr>
+      <td valign="top">Why do you want to work with us?</td>
+      <td><textarea name="cover_letter" rows="4" cols="30"></textarea></td>
+    </tr>
+
+    <!-- Section: Confirmation & Submission -->
+    <tr>
+      <td colspan="2">
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">I certify that all information provided above is true and correct. <strong>*</strong></label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="Submit Application" />
+        <input type="reset" value="Clear Form" />
+      </td>
+    </tr>
+
+  </table>
+</form>
+
+</body>
+</html>
